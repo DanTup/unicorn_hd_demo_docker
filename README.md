@@ -10,10 +10,10 @@ docker run --device=/dev/spidev0.0 dantup/unicorn_hd_demo
 
 The `--device=/dev/spidev0.0` is required to allow the container to access the local device (docker containers are unprivileged by default).
 
-To run a different sample, append the name of the file from the [examples folder](https://github.com/pimoroni/unicorn-hat-hd/tree/master/examples).
+To run a different sample, append the name of the file from the [examples folder](https://github.com/pimoroni/unicorn-hat-hd/tree/master/examples) and add `-it` if an interactive terminal is required (eg. for snake).
 
 ```
-docker run --device=/dev/spidev0.0 dantup/unicorn_hd_demo candle.py
+docker run -it --device=/dev/spidev0.0 dantup/unicorn_hd_demo snake.py
 ```
 
 
