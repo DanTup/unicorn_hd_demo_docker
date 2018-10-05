@@ -1,4 +1,4 @@
-FROM arm32v7/python:2
+FROM arm32v7/python:3
 WORKDIR /root/
 
 RUN apt-get update && \
